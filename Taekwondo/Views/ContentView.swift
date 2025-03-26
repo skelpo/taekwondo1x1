@@ -7,11 +7,11 @@ struct ContentView: View {
         NavigationStack {
             VStack(spacing: 0) {
                 // Logo in header
-                LogoView(size: 120)
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 120)
                     .padding(.vertical, 20)
-                    .onLongPress {
-                        showingDeveloperTools = true
-                    }
                 
                 List {
                     NavigationLink(destination: VocabularyView()) {

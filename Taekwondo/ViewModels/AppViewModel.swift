@@ -311,8 +311,10 @@ class AppViewModel: ObservableObject {
             SajuJirugi.createForm(),
             TaegeukIlJang.createForm(),
             Koryo.createForm(),
-
         ]
+        
+        // Sort forms by belt level from lowest (white) to highest (black)
+        forms.sort { $0.beltLevel.rawValue > $1.beltLevel.rawValue }
     }
     
     private func loadExamRequirements() {

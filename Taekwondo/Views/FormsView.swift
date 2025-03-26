@@ -34,7 +34,7 @@ struct FormRow: View {
                 Text(form.koreanName)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                Text("\(form.beltLevel.rawValue) Gürtel")
+                Text(form.beltLevel.rawValue == 0 ? "1. Dan" : "\(form.beltLevel.rawValue). Kup")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }

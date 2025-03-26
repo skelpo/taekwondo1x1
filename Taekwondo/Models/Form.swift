@@ -17,31 +17,31 @@ struct FormMovement: Identifiable {
 }
 
 enum BeltLevel: Int, CaseIterable {
-    case white = 1
-    case yellowWhite = 2
-    case yellow = 3
-    case greenYellow = 4
-    case green = 5
-    case blueGreen = 6
-    case blue = 7
-    case redBlue = 8
-    case red = 9
-    case blackRed = 10
-    case black = 11
+    case white = 10
+    case yellowWhite = 9
+    case yellow = 8
+    case greenYellow = 7
+    case green = 6
+    case blueGreen = 5
+    case blue = 4
+    case redBlue = 3
+    case red = 2
+    case blackRed = 1
+    case black = 0
     
     var description: String {
         switch self {
-        case .white: return "Weiß (1. Kup)"
-        case .yellowWhite: return "Gelb-Weiß (2. Kup)"
-        case .yellow: return "Gelb (3. Kup)"
-        case .greenYellow: return "Grün-Gelb (4. Kup)"
-        case .green: return "Grün (5. Kup)"
-        case .blueGreen: return "Blau-Grün (6. Kup)"
-        case .blue: return "Blau (7. Kup)"
-        case .redBlue: return "Rot-Blau (8. Kup)"
-        case .red: return "Rot (9. Kup)"
-        case .blackRed: return "Schwarz-Rot (10. Kup)"
-        case .black: return "Schwarz (Dan)"
+        case .white: return "Weiß (10. Kup)"
+        case .yellowWhite: return "Gelb-Weiß (9. Kup)"
+        case .yellow: return "Gelb (8. Kup)"
+        case .greenYellow: return "Grün-Gelb (7. Kup)"
+        case .green: return "Grün (6. Kup)"
+        case .blueGreen: return "Blau-Grün (5. Kup)"
+        case .blue: return "Blau (4. Kup)"
+        case .redBlue: return "Rot-Blau (3. Kup)"
+        case .red: return "Rot (2. Kup)"
+        case .blackRed: return "Schwarz-Rot (1. Kup)"
+        case .black: return "Schwarz (1. Dan)"
         }
     }
 } 

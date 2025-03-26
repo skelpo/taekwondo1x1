@@ -35,8 +35,8 @@ struct FormDiagramContent: View {
                 SajuJirugiPattern(center: center, radius: radius)
             case "Taegeuk Il Jang":
                 TaegeukIlJangPattern(center: center, radius: radius)
-            case "Taegeuk Yi Jang":
-                TaegeukYiJangPattern(center: center, radius: radius)
+            case "Taegeuk Ih Jang":
+                TaegeukIhJangPattern(center: center, radius: radius)
             case "Taegeuk Sam Jang":
                 TaegeukSamJangPattern(center: center, radius: radius)
             case "Taegeuk Sa Jang":
@@ -178,13 +178,13 @@ struct TaegeukIlJangPattern: View {
     }
 }
 
-struct TaegeukYiJangPattern: View {
+struct TaegeukIhJangPattern: View {
     let center: CGPoint
     let radius: CGFloat
     
     var body: some View {
         ZStack {
-            // Taegeuk Yi Jang - ähnlich wie Il Jang, aber mit leicht verändertem Muster
+            // Taegeuk Ih Jang - ähnlich wie Il Jang, aber mit leicht verändertem Muster
             // Repräsentiert das See-Trigramm
             
             // Die drei horizontalen Linien zeichnen
@@ -635,22 +635,88 @@ struct KoryoPattern: View {
 }
 
 #Preview {
-    VStack(spacing: 20) {
-        FormDiagramView(form: Form(
-            name: "Saju Jirugi",
-            koreanName: "사주 지르기",
-            beltLevel: .yellow,
-            movements: [],
-            description: ""
-        ), size: 200)
-        
-        FormDiagramView(form: Form(
-            name: "Taegeuk Il Jang",
-            koreanName: "태극 1장",
-            beltLevel: .yellow,
-            movements: [],
-            description: ""
-        ), size: 200)
+    ScrollView {
+        VStack(spacing: 20) {
+            FormDiagramView(form: Form(
+                name: "Saju Jirugi",
+                koreanName: "사주 지르기",
+                beltLevel: .yellow,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Il Jang",
+                koreanName: "태극 1장",
+                beltLevel: .yellow,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Ih Jang",
+                koreanName: "태극 2장",
+                beltLevel: .greenYellow,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Sam Jang",
+                koreanName: "태극 3장",
+                beltLevel: .green,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Sa Jang",
+                koreanName: "태극 4장",
+                beltLevel: .blue,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Oh Jang",
+                koreanName: "태극 5장",
+                beltLevel: .blueGreen,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Yuk Jang",
+                koreanName: "태극 6장",
+                beltLevel: .redBlue,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Chil Jang",
+                koreanName: "태극 7장",
+                beltLevel: .red,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Taegeuk Pal Jang",
+                koreanName: "태극 8장",
+                beltLevel: .blackRed,
+                movements: [],
+                description: ""
+            ), size: 200)
+            
+            FormDiagramView(form: Form(
+                name: "Koryo",
+                koreanName: "고려",
+                beltLevel: .black,
+                movements: [],
+                description: ""
+            ), size: 200)
+        }
+        .padding()
     }
-    .padding()
 } 
