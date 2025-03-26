@@ -400,7 +400,7 @@ class AppViewModel: ObservableObject {
                 beltLevel: .blue,
                 basicTechniques: ["Grundschule"],
                 forms: ["Taegeuk Sa Jang"],
-                selfDefense: ["Freie Abwehr von Angriffen aus der langen, mittleren und Nahdistanz", "SV unter dem Aspekt "Raumnot""],
+                selfDefense: ["Freie Abwehr von Angriffen aus der langen, mittleren und Nahdistanz", "SV unter dem Aspekt \"Raumnot\""],
                 sparring: ["Pratzensparring", "Situations-Sparring (Angriff – Konter)"],
                 theory: ["Bisherige Themen", "Kenntnis der vitalen Körperpunkte"],
                 breakingTest: BreakingTest(
